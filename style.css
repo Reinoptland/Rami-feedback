@@ -1,169 +1,270 @@
 *{
-    margin-bottom: 0;
-}
-html {
-    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /* border: 1px solid red; */
 
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0;  
+
+
 }
 body{
-    font-family: 'Plus Jakarta Sans', sans-serif;
     background-image: linear-gradient(#FFFFFF, #F0F1FF);
 }
-
-.header {
+.header{
     display: flex;
-    margin: 5rem;
-    margin-top: 1rem;
+    justify-content: space-between;
     align-items: center;
-    width: 87%;
-    justify-content: space-between;
-}
+    padding: 16px;
 
+}
 .logo-dark{
-    width: 10rem;
-    height: 2.8rem;
+    width: 89px;
+    height: auto;
 }
 
-.btn{
-padding: 1.2rem;
-font-family: 'Plus Jakarta Sans', sans-serif;
- font-size: 18px;
- font-weight: 200;
- color: white;
- border: none;
- border-radius: 28px;
- background-color:#13183F ;
-}
-.main{
-    display: flex;
-    align-items: baseline;
-    
-    justify-content: space-between;
+.btn-header{
+    padding: 10px 24px;
+    border-radius: 28px;
+    border :none;
+    background-color:#13183F ;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
 
-    margin-left: 4rem;
+
 }
+.btn-header:hover{
+    background-color:#666CA3;
+    cursor: pointer;
+}
+
+
+
 .main-article{
-    display: block;
-    width: 50%;
-}
+    padding: 16px;
+    margin-top: 38px;
 
-.fig-img{
-    width: 50%;
-    position: relative;
-}
-.main-img{
-    width: 70rem;
-    position: absolute;
-    overflow: clip;
-    margin: 3rem;
-   
-
-
-    top: -33rem;
-    left: 10rem;
- 
 }
 .main-heading{
-    font-weight: 800;
-    font-size: 56px;
     color: #13183F;
-    margin-bottom: 3rem;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
-p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+.heading-para{
+    margin-top: 26px;
     color: #83869A;
+    font-size: 16px;
+    font-weight:300;
+    line-height: 26px;
+
 }
 .btn-article{
-    padding: 1.2rem;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-image: linear-gradient( #Ff6F48 ,#f02AA6 );
     color: #fff;
-    border: none;
+    background-image: linear-gradient( #FF6F48, #F02AA6);
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 37px;
     border-radius: 28px;
-    font-weight: 200;
-    font-size: 18px;
-}
-.btn-card{
     border: none;
-    background: none;
-    font-size: 18px;
-
-    font-weight: 400;
-    color: #F74780;
+}
+.fig-img{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  
+}
+.main-img{
+    width: 100%;
 }
 .main-section{
     display: flex;
-    flex-wrap: wrap;
-    margin: 10rem 10rem;
-    gap: 3.3rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+
 }
 .item-card:not(:first-child){
-  
 
-    border-radius: 2rem;
+    border-radius: 10px;
+    margin-top: 16px;
     background: #fff;
-
-   
 }
-.logo{
-    margin-top: -5%;
-    margin-left: 10%;
 
-    
-}
 .item-card{
-    flex: 24%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    margin-bottom: 6rem;
-}
-.item-card{
-    background-image: linear-gradient( #Ff6F48 ,#f02AA6 );
-    color: #fff;
-    font-size: 23px;
-    line-height: 40px;
-    border-radius: 28px;
     
-
-
+    width: 343px;
+    margin: 16px;
 }
 .card-header{
-    margin: 6rem 2rem;
+    background-image: linear-gradient( #FF6F48, #F02AA6);
+    color: #fff;
+    padding: 24px 30px;
+    border-radius: 10px;
+
 }
-h2 , .card-para , .btn-card{
-    margin: 3rem 1em;
+.logo-header , .card-para , .btn-card{
+    margin:24px 28px;
 }
-h2{
+
+.logo{
+    margin-left: 28px;
+    margin-top: -16px;
+}
+.logo-header{
     color: #13183F;
-}
 
+}
+.card-para{
+    color: #83869A;
+    font-weight: 500;
+    line-height: 26px;
+}
+.btn-card{
+    background: none;
+    border: none;
+    color: #F74780;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+
+
+}
 .footer{
-    margin-left: -1rem;
-    padding: 2rem;
-    margin-top: 10rem;
-    width: 100%;
-    background-color: #13183F;
-
-
-}
-.footer-content{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: auto 8rem;
+    align-items: center;
+    background-color: #13183F;
+    padding: 36px 16px;
+    margin-top: 80px;
 }
 .btn-footer{
-    padding: 1.2rem;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-image: linear-gradient( #F02AA6 ,#4851FF);
-    color: #fff;
-    border: none;
+    padding: 10px 24px;
     border-radius: 28px;
-    font-weight: 200;
-    font-size: 18px;
+    border :none;
+    background:linear-gradient(#f02AA6, #4851FF);
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+
+
+}
+/*Tablet*/
+@media screen and (min-width:768px){
+    .header{
+        padding: 24px 40px;
+    }
+    .footer{
+        padding: 36px 40px;
+
+    }
+    .main{
+        display: flex;
+        align-items: center;
+
+    }
+    .main-article{
+        width: 398px;
+        padding: 40px;
+    }
+    .main-heading{
+        text-shadow: none;
+    }
+
+    .main-img{
+        display: none;
+    }
+    body{
+        background: url(./assets/image-hero-tablet.png) no-repeat top -92px right -297px,linear-gradient(#FFFFFF, #F0F1FF);
+       
+
+    }
+    .main-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 32px;
+    }
+    .card-header{
+        background-image:none;
+        color: #fff;
+        padding: 0 0;
+        border-radius: 0;
+        font-size:24px ;
+        font-weight: bolder;
+        line-height: 32px;
+        margin-top: -100px;
+
+    
+    }
+    #item-card-first{
+        background-image: linear-gradient( #FF6F48, #F02AA6);
+        border-radius: 10px;
+        padding: 150px 40px;
+               
+        
+
+      }
+      .item-card{
+    
+
+        margin: 32px;
+    }
+    .item-card {
+        flex: 33.33%;
+    }
+
+    
+}
+    /*Desktop*/
+@media screen and (min-width:1440px){
+    .header{
+        padding: 24px 165px;
+    }
+    .footer{
+        padding: 32px 165px;
+    }
+    .logo-dark , .logo-light{
+        width: 111px;
+        height: auto;
+    }
+    .btn-footer{
+        padding: 14px 32px;
+    }
+    .main{
+        margin-top: 178px;
+    
+    }
+    .main-article{
+        padding: 24px 165px;
+        width: 50%;
+        
+    }
+    body{
+        background: url(./assets/image-hero-desktop.png) no-repeat top -130px right -300px,linear-gradient(#FFFFFF, #F0F1FF);
+    }
+    .main-section{
+        margin: 32px 0;;
+        padding: 165px;
+        gap: 30px;
+
+    }
+    .item-card {
+        margin: 0;
+        flex: 24.444%;
+    }
+
+
+   
+   
 }
